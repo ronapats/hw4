@@ -1,8 +1,5 @@
 class PostsController < ApplicationController
-  def index
-    @posts = Post.where({"place_id" => @place["id"], "user_id" => session["user_id"]})
-    @post = Post.new
-  end
+
 
   def new
     @post = Post.new
